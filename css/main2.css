@@ -80,7 +80,9 @@ body {
 /* -------------------------------------------------------------------
  * links - (_document-setup)
  * ------------------------------------------------------------------- */
-
+a{
+  text-decoration: none !important;
+}
 a,
 a:visited {
   color: #0087cc;
@@ -1308,7 +1310,7 @@ h1.intro-header::before {
 }
 
 #header-nav-wrap .header-main-nav li.current a {
-  color: green;
+  color: green !important;
 }
 
 #header-nav-wrap .cta {
