@@ -1131,7 +1131,8 @@ h1.intro-header::before {
   height: 72px;
   max-width: 100%;
   margin:0;
-  background-color: #111111;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1147,7 +1148,7 @@ h1.intro-header::before {
 
 .header-logo {
   position: absolute;
-  left: 40px;
+  left: 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1198,7 +1199,7 @@ h1.intro-header::before {
 
 .header-menu-toggle:hover,
 .header-menu-toggle:focus {
-  color: #FFFFFF;
+  color: black;
 }
 
 .header-menu-toggle span {
@@ -1211,7 +1212,7 @@ h1.intro-header::before {
   top: 50%;
   right: auto;
   bottom: auto;
-  background-color: white;
+  background-color: black;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   font: 0/0 a;
@@ -1247,7 +1248,7 @@ h1.intro-header::before {
 
 .header-menu-toggle.is-clicked span::before,
 .header-menu-toggle.is-clicked span::after {
-  background-color: white;
+  background-color: black;
 }
 
 .header-menu-toggle.is-clicked span::before {
@@ -1293,6 +1294,7 @@ h1.intro-header::before {
 #header-nav-wrap .header-main-nav li a {
   display: block;
   line-height: 72px;
+  color: black !important;
 }
 
 #header-nav-wrap .header-main-nav li a,
@@ -1302,11 +1304,11 @@ h1.intro-header::before {
 
 #header-nav-wrap .header-main-nav li a:hover,
 #header-nav-wrap .header-main-nav li a:focus {
-  color: #ffffff;
+  color: green !important;
 }
 
 #header-nav-wrap .header-main-nav li.current a {
-  color: #ffffff;
+  color: green;
 }
 
 #header-nav-wrap .cta {
@@ -1344,8 +1346,8 @@ h1.intro-header::before {
     width: 100%;
     right: auto;
     left: 0;
-    background-color: #111111;
-    padding: 120px 40px 54px;
+    background-color: white;
+    padding: 70px 40px 54px;
   }
   #header-nav-wrap .header-main-nav {
     display: block;
