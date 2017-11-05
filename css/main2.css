@@ -2477,6 +2477,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   #testimonial-slider p {
     font-size: 2rem;
   }
+
 }
 
 
@@ -2484,6 +2485,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  *  14. download - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+ #title{
+   font-weight: bold;
+   font-size: 30px;
+   left: 8%;
+   position: absolute;
+   padding: 5px;
+ }
 
 #download {
   background: #3397e1;
