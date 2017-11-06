@@ -1471,6 +1471,18 @@ h1.intro-header::before {
   position: relative;
   width: 50%;
 }
+.new{
+  visibility: hidden;
+}
+@media (max-width:400px) {
+.home-content{
+visibility: hidden;
+}
+.new{
+  visibility: visible;
+}
+
+}
 
 .home-content-left h3 {
   color:#000000;
