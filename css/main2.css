@@ -80,6 +80,11 @@ body {
     margin-left: 20%;
   }
 }
+@media only screen and (max-width: 768px) {
+  section {
+    data-natural-height: 3500;
+  }
+}
 
 /* -------------------------------------------------------------------
  * links - (_document-setup)
