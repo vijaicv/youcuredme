@@ -1467,6 +1467,19 @@ h1.intro-header::before {
   width: 50%;
 }
 
+.new{
+  visibility: hidden;
+}
+@media only screen and (max-width:400px) {
+.home-content{
+visibility: hidden;
+}
+.new{
+  visibility: visible;
+}
+
+}
+
 .home-content-left h3 {
   color:#000000;
   font-size: 1.6rem;
@@ -1726,9 +1739,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   .home-content-left {
     width: 60%;
     padding: 18rem 6rem 12rem 4rem;
-  }
-  .home-content-left h3 {
-    font-size: 1.5rem;
+  }@media only screen and (max-width: 900px) {
   }
   .home-content-left h1 {
     font-size: 4.2rem;
