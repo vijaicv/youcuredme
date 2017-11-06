@@ -1467,6 +1467,20 @@ h1.intro-header::before {
   width: 50%;
 }
 
+.new{
+  visibility: hidden;
+}
+@media only screen and (max-width:400px) {
+.home-content{
+visibility: hidden;
+}
+.new{
+  visibility: visible;
+}
+
+}
+
+
 .home-content-left h3 {
   color:#000000;
   font-size: 1.6rem;
