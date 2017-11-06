@@ -174,6 +174,9 @@ p.lead {
   p.lead {
     font-size: 2rem;
   }
+  #title{
+    margin-left: 20%;
+  }
 }
 
 em, i, strong, b {
@@ -420,6 +423,10 @@ img.pull-left {
 @media only screen and (max-width: 1024px) {
   .bgrid {
     padding: 0 18px;
+  }
+
+  #title{
+    margin-left: 5%;
   }
 }
 
@@ -1470,9 +1477,20 @@ h1.intro-header::before {
 .new{
   visibility: hidden;
 }
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:768px) {
 .home-content{
 visibility: hidden;
+display: none;
+height: 0px;
+margin:0px;
+padding: 0px;
+}
+.overlay{
+  display: none;
+}
+#home{
+  display: none;
+  visibility: hidden;
 }
 .new{
   visibility: visible;
@@ -1710,6 +1728,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
   .home-content-left {
     padding: 18rem 0 12rem 40px;
+
   }
   .home-content-left h3 {
     font-size: 1.5rem;
@@ -2578,6 +2597,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     height: 60px;
     background-size: 194px 60px;
   }
+
 }
 
 

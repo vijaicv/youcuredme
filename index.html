@@ -9,7 +9,7 @@
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="green">
@@ -48,9 +48,9 @@
    ================================================== -->
    <header id="header" class="row">
    		<div class="header-logo">
-          <img src="images/icon.png" style="border-radius:100%; padding:20px; width: 90px;"/>
+          <img id="icon" src="images/icon.png" style="border-radius:100%; padding:20px; width: 90px;"/>
 	    </div>
-      <div id="title" style="font-family: 'Oleo Script', cursive;font-size:1.8em;">Youcuredme</div>
+      <div id="title" style="font-family: 'montserrat-regular', cursive;font-size:1.8em;">Youcuredme</div>
 	   	<nav id="header-nav-wrap">
 			<ul class="header-main-nav">
 				<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
@@ -69,7 +69,7 @@
    <!-- home
    ================================================== -->
    <section id="home" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000>
-
+        <img src="images/hero-bg.jpg" class="new"/>
         <div class="overlay"></div>
         <div class="home-content">
 
@@ -228,7 +228,7 @@
                         <div>
                         <img src="images/signup.png" class="howimg"/>
                         </div>
-                        <p>Sign up on our app.Share with us the info  u would like to .We respect your security .
+                        <p>Sign up on our app.Share with us the info you would like to .We respect your security .
                           So, all your information will be private and will not be shared unless you say so.</p>
                     </div>
 
@@ -255,7 +255,7 @@
                         <img src="images/publish.png" />
                         </div>
                         <p>Share your story and read that of other's. Make worth of your time spent with verified articles by experienced Doctors and
-                           acess to many other amazing services from youcured me <b>Absolutely free for life</b>
+                           acess to many other amazing services from youcuredme <b>Absolutely free for life</b>
                         </p>
                     </div>
 
@@ -296,6 +296,8 @@
                                 <ul class="plan-block-features">
                                     <li><span>Unlimited</span> Acess to all our features</li>
                                 </ul>
+
+
                             </div>
 
                         </div>
@@ -324,39 +326,32 @@
 
                 <div class="slides owl-carousel">
 
-                    <div>
-                        <p>
-                        Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                        to do what you believe is great work. And the only way to do great work is to love what you do.
-                        If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                        </p>
+                                      <div>
+                                          <p>
+                                            A place for patients to interact with each other and share their experiences is necessary and good for their emotional wellness.
+                                          <div class="testimonial-author">
+                                                  <img src="images/avatars/user-03.jpg" alt="Author image">
+                                                  <div class="author-info">
+                                                      Babu Zacharia
+                                                      <span class="position">Co-ordinator, Palliative care at Asha Kiran</span>
+                                                  </div>
+                                          </div>
+                                      </div>
 
-                        <div class="testimonial-author">
-                                <img src="images/avatars/user-02.jpg" alt="Author image">
-                                <div class="author-info">
-                                    Steve Jobs
-                                    <span class="position">CEO, Apple.</span>
-                                </div>
-                        </div>
-                    </div>
+                                      <div>
+                                          <p>
+                                            If this product was there, I could have known many basic procedures from initial days, which can only be told by experienced people .  </p>
 
-                    <div>
-                        <p>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                        </p>
+                                          <div class="testimonial-author">
+                                                  <img src="images/avatars/user-02.jpg" alt="Author image">
+                                                  <div class="author-info">
+                                                      Sinil
+                                                      <span>Bedridden neural patient for past 20 years</span>
+                                                  </div>
+                                          </div>
+                                      </div>
 
-                        <div class="testimonial-author">
-                                <img src="images/avatars/user-03.jpg" alt="Author image">
-                                <div class="author-info">
-                                    John Doe
-                                    <span>CEO, ABC Corp.</span>
-                                </div>
-                        </div>
-                    </div>
-
-                </div> <!-- end slides -->
+                                  </div><!-- end slides -->
 
             </div> <!-- end testimonial-slider -->
 
