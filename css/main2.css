@@ -1474,7 +1474,7 @@ h1.intro-header::before {
 .new{
   visibility: hidden;
 }
-@media (max-width:400px) {
+@media only screen and (max-width:400px) {
 .home-content{
 visibility: hidden;
 }
