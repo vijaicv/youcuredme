@@ -1,54 +1,43 @@
 /* ===================================================================
  * Dazzle - Main JS
  *
- * ------------------------------------------------------------------- */
+ * ------------------------------------------------------------------- */ 
 
 (function($) {
 
 	"use strict";
 
-	var cfg = {
+	var cfg = {		
 		scrollDuration : 800, // smoothscroll duration
 		mailChimpURL   : 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d' // mailchimp url
-	},
+	},	
 
-	$WIN = $(window);
+	$WIN = $(window);	
 
    // Add the User Agent to the <html>
    // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
 	var doc = document.documentElement;
 	doc.setAttribute('data-useragent', navigator.userAgent);
-	$(".download-badges").on('click',function(e) {
-		e.preventDefault();
-		swal({
-		  title: 'We are crafting our product. Stay tuned!',
-		  text: '',
-		  imageUrl: 'https://media.tenor.com/images/d02f68f2b8785baa2e72115dec9bceed/tenor.gif',
-		  imageWidth: 200,
-		  imageHeight: 100,
-		  imageAlt: 'Custom image',
-		  animation: false
-		})
 
-	})
-	/* Preloader
+	
+	/* Preloader 
 	 * -------------------------------------------------- */
 	var ssPreloader = function() {
 
-		$WIN.on('load', function() {
+		$WIN.on('load', function() {	
 
 			// force page scroll position to top at page refresh
 			$('html, body').animate({ scrollTop: 0 }, 'normal');
 
          // will fade out the whole preloader DIV that covers the website.
 	      $("#preloader").delay(500).fadeOut('slow');
-
+	  
 	  	});
 	};
 
 
 	/* Mobile Menu
-	 * ---------------------------------------------------- */
+	 * ---------------------------------------------------- */ 
 	var ssMobileMenu = function() {
 
   		var toggleButton = $('.header-menu-toggle'),
@@ -68,22 +57,22 @@
 			else nav.removeClass('mobile');
 		});
 
-		$('#header-nav-wrap').find('a').on("click", function() {
+		$('#header-nav-wrap').find('a').on("click", function() {  
 
-			if (nav.hasClass('mobile')) {
-				toggleButton.toggleClass('is-clicked');
-				nav.slideToggle();
-			}
+			if (nav.hasClass('mobile')) {   		
+				toggleButton.toggleClass('is-clicked'); 
+				nav.slideToggle();   		
+			}     
 		});
 
-	};
+	}; 
 
 
 	/* FitVids
 	 * ---------------------------------------------------- */
 	var ssFitVids = function() {
 		$(".fluid-video-wrapper").fitVids();
-	};
+	}; 
 
 
 
@@ -91,14 +80,14 @@
 	* ------------------------------------------------------ */
 	var ssOwlCarousel = function() {
 
-		$(".owl-carousel").owlCarousel({
+		$(".owl-carousel").owlCarousel({	
 	      loop: true,
   			nav: false,
 			autoHeight: true,
   			items: 1
 		});
 
-	};
+	};  	
 
 
   /* Highlight the current section in the navigation bar
@@ -106,7 +95,7 @@
 	var ssWaypoints = function() {
 
 		var sections = $("section"),
-		navigation_links = $(".header-main-nav li a");
+		navigation_links = $(".header-main-nav li a");	
 
 		sections.waypoint( {
 
@@ -118,12 +107,12 @@
 
 				if (direction === "up") active_section = active_section.prev();
 
-				var active_link = $('.header-main-nav li a[href="#' + active_section.attr("id") + '"]');
+				var active_link = $('.header-main-nav li a[href="#' + active_section.attr("id") + '"]');			
 
 	         navigation_links.parent().removeClass("current");
 				active_link.parent().addClass("current");
 
-			},
+			}, 
 
 			offset: '25%'
 
@@ -138,9 +127,9 @@
 		$('.smoothscroll').on('click', function (e) {
 			var target = this.hash,
 			$target    = $(target);
-
+	 	
 		 	e.preventDefault();
-		 	e.stopPropagation();
+		 	e.stopPropagation();	  
 
 			$('html, body').stop().animate({
 				'scrollTop': $target.offset().top
@@ -157,7 +146,7 @@
   /* Placeholder Plugin Settings
 	* ------------------------------------------------------ */
 	var ssPlaceholder = function() {
-		$('input, textarea, select').placeholder();
+		$('input, textarea, select').placeholder();  
 	};
 
 
@@ -168,10 +157,10 @@
 
   		$('.alert-box').on('click', '.close', function() {
 		  $(this).parent().fadeOut(500);
-		});
+		}); 
 
-  	};
-
+  	};	  	
+	
 
 
   /* Animate On Scroll
@@ -218,12 +207,12 @@
 		  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
 		  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
 		  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
-		}
+		} 
 
 	};
 
 
-
+ 
   /* Back to Top
 	* ------------------------------------------------------ */
 	var ssBackToTop = function() {
@@ -234,7 +223,7 @@
 		scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 		goTopButton = $("#go-top")
 
-		// Showswal("Here's a message!") or hide the sticky footer button
+		// Show or hide the sticky footer button
 		$(window).on('scroll', function() {
 			if ($(window).scrollTop() >= pxShow) {
 				goTopButton.fadeIn(fadeInTime);
@@ -242,9 +231,9 @@
 				goTopButton.fadeOut(fadeOutTime);
 			}
 		});
-	};
+	};	
 
-
+  
   /* Initialize
 	* ------------------------------------------------------ */
 	(function ssInit() {
@@ -257,11 +246,11 @@
 		ssSmoothScroll();
 		ssPlaceholder();
 		ssAlertBoxes();
-		ssAOS();
+		ssAOS();		
 		ssAjaxChimp();
 		ssBackToTop();
 
 	})();
-
+ 
 
 })(jQuery);

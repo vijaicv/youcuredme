@@ -80,11 +80,6 @@ body {
     margin-left: 20%;
   }
 }
-@media only screen and (max-width: 768px) {
-  section {
-    data-natural-height: 3500;
-  }
-}
 
 /* -------------------------------------------------------------------
  * links - (_document-setup)
@@ -1471,18 +1466,6 @@ h1.intro-header::before {
   position: relative;
   width: 50%;
 }
-.new{
-  visibility: hidden;
-}
-@media (max-width:400px) {
-.home-content{
-visibility: hidden;
-}
-.new{
-  visibility: visible;
-}
-
-}
 
 .home-content-left h3 {
   color:#000000;
@@ -2797,5 +2780,6 @@ footer ul a:visited {
     display: none;
   }
 }
+
 
 /*# sourceMappingURL=main.css.map */
