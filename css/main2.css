@@ -75,11 +75,7 @@ body {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 400px) {
-  #title{
-    margin-left: 20%;
-  }
-}
+
 
 /* -------------------------------------------------------------------
  * links - (_document-setup)
@@ -2522,6 +2518,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
    left: 8%;
    position: absolute;
    padding: 5px;
+ }
+ @media (max-width: 400px) {
+   #title{
+     font-size: 15px;
+     margin-top: 15px;
+     left: 25%;
+   }
  }
 
 #download {
