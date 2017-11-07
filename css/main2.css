@@ -1771,7 +1771,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 @media only screen and (max-width: 900px) {
   #home {
-    height: 200px;
+    height: auto;
     min-height: 840px;
   }
   #home,
