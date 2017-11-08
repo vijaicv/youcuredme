@@ -1497,7 +1497,9 @@ padding: 0px;
 .new{
   visibility: visible;
 }
-
+    #whitebg{
+        background: white;
+    }
 }
 
 .home-content-left h3 {
