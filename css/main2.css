@@ -38,7 +38,9 @@
  *  02. base style overrides - (_document-setup)
  *
  * ------------------------------------------------------------------- */
-
+.change_bg{
+  background-color: white;
+}
 html {
   font-size: 10px;
 }
