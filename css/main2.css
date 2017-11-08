@@ -565,6 +565,10 @@ td:last-child {
   display: none;
 }
 
+#feedback{
+    background: #39b545;
+    padding: 3%;
+}
 
 /* ===================================================================
  *  05. forms - (_forms.scss)
